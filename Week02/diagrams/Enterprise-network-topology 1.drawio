@@ -1,0 +1,143 @@
+<mxfile host="Electron">
+  <diagram id="abc-network" name="Enterprise Network Topology">
+    <mxGraphModel dx="1683" dy="1029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;fontColor=#17375E;align=center;" value="ENTERPRISE NETWORK TOPOLOGY" vertex="1">
+          <mxGeometry height="45" width="640" x="380" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#444444;align=center;" value="ABC Startup Solutions • ITEP 414 – System Administration and Maintenance • Week 2 • Philip Jhay E. Reyes" vertex="1">
+          <mxGeometry height="30" width="900" x="250" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="internet" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#17375E;strokeWidth=2;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="INTERNET&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Public Internet&lt;/font&gt;" vertex="1">
+          <mxGeometry height="65" width="360" x="520" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="modem" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF3FF;strokeColor=#2F75B5;strokeWidth=2;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="ISP MODEM / ONT&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Business Fiber Connection&lt;/font&gt;" vertex="1">
+          <mxGeometry height="65" width="360" x="520" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="router" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F9FF;strokeColor=#17375E;strokeWidth=2;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="ENTERPRISE ROUTER&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;WAN Routing / NAT / DHCP&lt;/font&gt;" vertex="1">
+          <mxGeometry height="65" width="360" x="520" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="firewall" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCE4E4;strokeColor=#C00000;strokeWidth=2;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="NEXT-GENERATION FIREWALL&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Filtering • VPN • Security Policies&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="400" x="500" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="switch" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E9F7EF;strokeColor=#198754;strokeWidth=2;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="24-PORT MANAGED SWITCH&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Gigabit • VLAN Capable&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="400" x="500" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="server" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF5FF;strokeColor=#17375E;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="SERVER&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Ubuntu Server&lt;br&gt;Internal Services&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="220" x="55" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="nas" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF7D6;strokeColor=#BF9000;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="NAS STORAGE&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Central Files &amp; Backups&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="220" x="323" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="printer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3F0FF;strokeColor=#674EA7;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="PRINTERS&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;2 Shared Network Printers&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="220" x="590" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="ap1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF8F5;strokeColor=#00897B;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="WIRELESS AP 1&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Employee / Guest Wi-Fi&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="220" x="830" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="NCrNniSNhSAtEm-YP0NA-3" edge="1" parent="1" source="ap2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="laptops" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ap2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF8F5;strokeColor=#00897B;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="WIRELESS AP 2&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Employee / Guest Wi-Fi&lt;/font&gt;" vertex="1">
+          <mxGeometry height="85" width="220" x="1080" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="it" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF5FF;strokeColor=#17375E;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="IT DEPARTMENT&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;5 Employees • Wired&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="220" x="55" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="hr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6EEFF;strokeColor=#7030A0;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="HR DEPARTMENT&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;4 Employees • Wired&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="220" x="323" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="finance" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF1E8;strokeColor=#E36C0A;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="FINANCE DEPARTMENT&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;5 Employees • Wired&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="220" x="590" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="sales" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF1E8;strokeColor=#C65911;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="SALES DEPARTMENT&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;6 Employees • Wired&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="220" x="830" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="laptops" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF8F5;strokeColor=#00897B;strokeWidth=2;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="IT / MANAGEMENT&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;5 Business Laptops • Wi-Fi / Wired&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="220" x="1080" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="vtitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;fontColor=#17375E;align=center;" value="LOGICAL VLAN SEGMENTATION" vertex="1">
+          <mxGeometry height="30" width="520" x="400" y="895" as="geometry" />
+        </mxCell>
+        <mxCell id="v10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EEF5FF;strokeColor=#17375E;strokeWidth=2;fontSize=11;align=center;verticalAlign=middle;" value="VLAN 10&lt;br&gt;IT Department&lt;br&gt;192.168.10.0/24" vertex="1">
+          <mxGeometry height="75" width="165" x="35" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F6EEFF;strokeColor=#7030A0;strokeWidth=2;fontSize=11;align=center;verticalAlign=middle;" value="VLAN 20&lt;br&gt;HR Department&lt;br&gt;192.168.20.0/24" vertex="1">
+          <mxGeometry height="75" width="165" x="215" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF1E8;strokeColor=#E36C0A;strokeWidth=2;fontSize=11;align=center;verticalAlign=middle;" value="VLAN 30&lt;br&gt;Finance Department&lt;br&gt;192.168.30.0/24" vertex="1">
+          <mxGeometry height="75" width="165" x="395" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF1E8;strokeColor=#C65911;strokeWidth=2;fontSize=11;align=center;verticalAlign=middle;" value="VLAN 40&lt;br&gt;Sales Department&lt;br&gt;192.168.40.0/24" vertex="1">
+          <mxGeometry height="75" width="165" x="575" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EAF8F5;strokeColor=#00897B;strokeWidth=2;fontSize=11;align=center;verticalAlign=middle;" value="VLAN 50&lt;br&gt;Management / Laptops&lt;br&gt;192.168.50.0/24" vertex="1">
+          <mxGeometry height="75" width="165" x="755" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v99" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF7D6;strokeColor=#BF9000;strokeWidth=2;fontSize=11;align=center;verticalAlign=middle;" value="VLAN 99&lt;br&gt;Servers / Infrastructure&lt;br&gt;192.168.99.0/24" vertex="1">
+          <mxGeometry height="75" width="165" x="935" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v100" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F7F7F7;strokeColor=#666666;strokeWidth=2;fontSize=11;align=center;verticalAlign=middle;" value="VLAN 100&lt;br&gt;Guest Wi-Fi&lt;br&gt;192.168.100.0/24" vertex="1">
+          <mxGeometry height="75" width="165" x="1115" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="internet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#17375E;strokeWidth=2;endArrow=block;" target="modem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="modem" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#17375E;strokeWidth=2;endArrow=block;" target="router">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="router" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#17375E;strokeWidth=2;endArrow=block;" target="firewall">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="firewall" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#17375E;strokeWidth=2;endArrow=block;" target="switch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="es1" edge="1" parent="1" source="switch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#17375E;strokeWidth=2;endArrow=block;" target="server">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="es2" edge="1" parent="1" source="switch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#17375E;strokeWidth=2;endArrow=block;" target="nas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="es3" edge="1" parent="1" source="switch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#17375E;strokeWidth=2;endArrow=block;" target="printer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="es4" edge="1" parent="1" source="switch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#17375E;strokeWidth=2;endArrow=block;" target="ap1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="es5" edge="1" parent="1" source="switch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#17375E;strokeWidth=2;endArrow=block;" target="ap2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NCrNniSNhSAtEm-YP0NA-4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="939.23" y="735" as="sourcePoint" />
+            <mxPoint x="939.23" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NCrNniSNhSAtEm-YP0NA-5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="735" as="sourcePoint" />
+            <mxPoint x="700" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NCrNniSNhSAtEm-YP0NA-6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="432.08" y="755.08" />
+              <mxPoint x="432.08" y="755.08" />
+            </Array>
+            <mxPoint x="432" y="735" as="sourcePoint" />
+            <mxPoint x="432" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NCrNniSNhSAtEm-YP0NA-7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="164.23" y="735" as="sourcePoint" />
+            <mxPoint x="164.23" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
